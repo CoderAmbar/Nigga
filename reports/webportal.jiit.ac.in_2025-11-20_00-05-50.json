@@ -1,0 +1,380 @@
+{
+    "target": "webportal.jiit.ac.in",
+    "timestamp": "2025-11-20_00-05-50",
+    "dns": [
+        "125.21.244.196"
+    ],
+    "port_scans": {
+        "nmap": "<error>Nmap scanning is disabled on Windows. Run this tool on Kali Linux for full scan.</error>",
+        "nikto": "<error>Nikto is not available on Windows. Run on Kali Linux for full scan.</error>"
+    },
+    "tech": {
+        "server": "WildFly/10",
+        "x_powered_by": "Undertow/1",
+        "tech_guesses": []
+    },
+    "ssl": {
+        "issuer": [
+            [
+                [
+                    "countryName",
+                    "US"
+                ]
+            ],
+            [
+                [
+                    "organizationName",
+                    "DigiCert Inc"
+                ]
+            ],
+            [
+                [
+                    "organizationalUnitName",
+                    "www.digicert.com"
+                ]
+            ],
+            [
+                [
+                    "commonName",
+                    "GeoTrust TLS RSA CA G1"
+                ]
+            ]
+        ],
+        "subject": [
+            [
+                [
+                    "countryName",
+                    "IN"
+                ]
+            ],
+            [
+                [
+                    "stateOrProvinceName",
+                    "Uttar Pradesh"
+                ]
+            ],
+            [
+                [
+                    "localityName",
+                    "NOIDA"
+                ]
+            ],
+            [
+                [
+                    "organizationName",
+                    "Jaypee Institute of Information Technology"
+                ]
+            ],
+            [
+                [
+                    "commonName",
+                    "*.jiit.ac.in"
+                ]
+            ]
+        ],
+        "notBefore": "Mar  4 00:00:00 2025 GMT",
+        "notAfter": "Apr  3 23:59:59 2026 GMT",
+        "valid": true
+    },
+    "headers": {
+        "present": {},
+        "missing": [
+            "HSTS is missing",
+            "CSP is missing",
+            "Clickjacking protection missing",
+            "MIME sniffing protection missing",
+            "Referrer policy missing",
+            "Feature control policy missing",
+            "Legacy XSS header missing"
+        ]
+    },
+    "subdomains": [],
+    "cves": [
+        {
+            "id": "CVE-2016-0793",
+            "description": "Incomplete blacklist vulnerability in the servlet filter restriction mechanism in WildFly (formerly JBoss Application Server) before 10.0.0.Final on Windows allows remote attackers to read the sensitive files in the (1) WEB-INF or (2) META-INF directory via a request that contains (a) lowercase or (b) \"meaningless\" characters.",
+            "severity": {
+                "cvssMetricV30": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "3.0",
+                            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                            "baseScore": 7.5,
+                            "baseSeverity": "HIGH",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "HIGH",
+                            "integrityImpact": "NONE",
+                            "availabilityImpact": "NONE"
+                        },
+                        "exploitabilityScore": 3.9,
+                        "impactScore": 3.6
+                    }
+                ],
+                "cvssMetricV2": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "2.0",
+                            "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                            "baseScore": 5.0,
+                            "accessVector": "NETWORK",
+                            "accessComplexity": "LOW",
+                            "authentication": "NONE",
+                            "confidentialityImpact": "PARTIAL",
+                            "integrityImpact": "NONE",
+                            "availabilityImpact": "NONE"
+                        },
+                        "baseSeverity": "MEDIUM",
+                        "exploitabilityScore": 10.0,
+                        "impactScore": 2.9,
+                        "acInsufInfo": false,
+                        "obtainAllPrivilege": false,
+                        "obtainUserPrivilege": false,
+                        "obtainOtherPrivilege": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CVE-2016-4993",
+            "description": "CRLF injection vulnerability in the Undertow web server in WildFly 10.0.0, as used in Red Hat JBoss Enterprise Application Platform (EAP) 7.x before 7.0.2, allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via unspecified vectors.",
+            "severity": {
+                "cvssMetricV30": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "3.0",
+                            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                            "baseScore": 6.1,
+                            "baseSeverity": "MEDIUM",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE"
+                        },
+                        "exploitabilityScore": 2.8,
+                        "impactScore": 2.7
+                    }
+                ],
+                "cvssMetricV2": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "2.0",
+                            "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                            "baseScore": 4.3,
+                            "accessVector": "NETWORK",
+                            "accessComplexity": "MEDIUM",
+                            "authentication": "NONE",
+                            "confidentialityImpact": "NONE",
+                            "integrityImpact": "PARTIAL",
+                            "availabilityImpact": "NONE"
+                        },
+                        "baseSeverity": "MEDIUM",
+                        "exploitabilityScore": 8.6,
+                        "impactScore": 2.9,
+                        "acInsufInfo": false,
+                        "obtainAllPrivilege": false,
+                        "obtainUserPrivilege": false,
+                        "obtainOtherPrivilege": false,
+                        "userInteractionRequired": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CVE-2015-3198",
+            "description": "The Undertow module of WildFly 9.x before 9.0.0.CR2 and 10.x before 10.0.0.Alpha1 allows remote attackers to obtain the source code of a JSP page via a \"/\" at the end of a URL.",
+            "severity": {
+                "cvssMetricV30": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "3.0",
+                            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                            "baseScore": 7.5,
+                            "baseSeverity": "HIGH",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "HIGH",
+                            "integrityImpact": "NONE",
+                            "availabilityImpact": "NONE"
+                        },
+                        "exploitabilityScore": 3.9,
+                        "impactScore": 3.6
+                    }
+                ],
+                "cvssMetricV2": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "2.0",
+                            "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                            "baseScore": 5.0,
+                            "accessVector": "NETWORK",
+                            "accessComplexity": "LOW",
+                            "authentication": "NONE",
+                            "confidentialityImpact": "PARTIAL",
+                            "integrityImpact": "NONE",
+                            "availabilityImpact": "NONE"
+                        },
+                        "baseSeverity": "MEDIUM",
+                        "exploitabilityScore": 10.0,
+                        "impactScore": 2.9,
+                        "acInsufInfo": false,
+                        "obtainAllPrivilege": false,
+                        "obtainUserPrivilege": false,
+                        "obtainOtherPrivilege": false,
+                        "userInteractionRequired": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CVE-2018-10682",
+            "description": "An issue was discovered in WildFly 10.1.2.Final. It is possible for an attacker to access the administration panel on TCP port 9990 without any authentication using \"anonymous\" access that is automatically created. Once logged in, a misconfiguration present by default (auto-deployment) permits an anonymous user to deploy a malicious .war file, leading to remote code execution. NOTE: the vendor indicates that anonymous access is not available in the default installation; however, it remains optional because there are several use cases for it, including development environments and network architectures that have a proxy server for access control to the WildFly server",
+            "severity": {
+                "cvssMetricV31": [
+                    {
+                        "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+                        "type": "Secondary",
+                        "cvssData": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                            "baseScore": 9.8,
+                            "baseSeverity": "CRITICAL",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "HIGH",
+                            "integrityImpact": "HIGH",
+                            "availabilityImpact": "HIGH"
+                        },
+                        "exploitabilityScore": 3.9,
+                        "impactScore": 5.9
+                    }
+                ],
+                "cvssMetricV30": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "3.0",
+                            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                            "baseScore": 9.8,
+                            "baseSeverity": "CRITICAL",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "HIGH",
+                            "integrityImpact": "HIGH",
+                            "availabilityImpact": "HIGH"
+                        },
+                        "exploitabilityScore": 3.9,
+                        "impactScore": 5.9
+                    }
+                ],
+                "cvssMetricV2": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "2.0",
+                            "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                            "baseScore": 10.0,
+                            "accessVector": "NETWORK",
+                            "accessComplexity": "LOW",
+                            "authentication": "NONE",
+                            "confidentialityImpact": "COMPLETE",
+                            "integrityImpact": "COMPLETE",
+                            "availabilityImpact": "COMPLETE"
+                        },
+                        "baseSeverity": "HIGH",
+                        "exploitabilityScore": 10.0,
+                        "impactScore": 10.0,
+                        "acInsufInfo": false,
+                        "obtainAllPrivilege": false,
+                        "obtainUserPrivilege": false,
+                        "obtainOtherPrivilege": false,
+                        "userInteractionRequired": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CVE-2018-10683",
+            "description": "An issue was discovered in WildFly 10.1.2.Final. In the case of a default installation without a security realm reference, an attacker can successfully access the server without authentication. NOTE: the Security Realms documentation in the product's Admin Guide indicates that \"without a security realm reference\" implies \"effectively unsecured.\" The vendor explicitly supports these unsecured configurations because they have valid use cases during development",
+            "severity": {
+                "cvssMetricV31": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                            "baseScore": 9.8,
+                            "baseSeverity": "CRITICAL",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "HIGH",
+                            "integrityImpact": "HIGH",
+                            "availabilityImpact": "HIGH"
+                        },
+                        "exploitabilityScore": 3.9,
+                        "impactScore": 5.9
+                    }
+                ],
+                "cvssMetricV2": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "cvssData": {
+                            "version": "2.0",
+                            "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                            "baseScore": 7.5,
+                            "accessVector": "NETWORK",
+                            "accessComplexity": "LOW",
+                            "authentication": "NONE",
+                            "confidentialityImpact": "PARTIAL",
+                            "integrityImpact": "PARTIAL",
+                            "availabilityImpact": "PARTIAL"
+                        },
+                        "baseSeverity": "HIGH",
+                        "exploitabilityScore": 10.0,
+                        "impactScore": 6.4,
+                        "acInsufInfo": false,
+                        "obtainAllPrivilege": false,
+                        "obtainUserPrivilege": false,
+                        "obtainOtherPrivilege": false,
+                        "userInteractionRequired": false
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "target": "example.com",
+    "timestamp": "2025-11-19_23-57-28",
+    "dns": [
+        "93.184.216.34"
+    ],
+    "nmap": "Nmap disabled",
+    "tech": {
+        "server": "TestServer"
+    },
+    "ssl": {
+        "issuer": "Fake CA"
+    },
+    "headers": {
+        "present": {},
+        "missing": []
+    },
+    "subdomains": [],
+    "cves": []
+}

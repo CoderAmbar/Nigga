@@ -1,0 +1,5 @@
+requests
+dnspython
+xmltodict
+jinja2
+python-whois
