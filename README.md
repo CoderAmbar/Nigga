@@ -77,9 +77,6 @@ webscanner/
 ├── requirements.txt
 └── README.md
 
-yaml
-Copy code
-
 ---
 
 ## 🛠️ Installation
